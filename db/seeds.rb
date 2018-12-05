@@ -5,7 +5,9 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-jacket = Category.new( name: "jacket");
+# jacket = Category.new( name: "jacket");
+top = Category.new( name: "top");
+bottom = Category.new( name: "bottom");
 
 item1 = Item.new(name: "Puffer Jacket from Mom", image: "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/pink-corduroy-puffer-1537884978.jpg?crop=1xw:1xh;center,top&resize=480:*", times_worn: 0, category: jacket )
 
