@@ -22,6 +22,6 @@ class Api::V1::ItemsController < ApplicationController
   private
 
   def item_params
-    params.require(:item).permit(:name, :image, :times_worn)
+    params.require(:item).permit(:name, :image, :times_worn, :category_id)
   end
 end

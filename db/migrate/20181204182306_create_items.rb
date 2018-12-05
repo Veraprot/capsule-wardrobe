@@ -2,7 +2,7 @@ class CreateItems < ActiveRecord::Migration[5.2]
   def change
     create_table :items do |t|
       t.string :name
-      t.integer :times_worn
+      t.integer :times_worn, :default => 0
       t.string :image
       t.references :category, foreign_key: true
 
