@@ -23,7 +23,7 @@ ActiveRecord::Schema.define(version: 2018_12_04_182306) do
 
   create_table "items", force: :cascade do |t|
     t.string "name"
-    t.integer "times_worn"
+    t.integer "times_worn", default: 0
     t.string "image"
     t.bigint "category_id"
     t.datetime "created_at", null: false

@@ -6,19 +6,22 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 # jacket = Category.new( name: "jacket");
-top = Category.new( name: "top");
-bottom = Category.new( name: "bottom");
+jacket = Category.create( name: "Jaket");
+bottom = Category.create( name: "Bottom");
+top = Category.create( name: "Top");
 
-item1 = Item.new(name: "Puffer Jacket from Mom", image: "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/pink-corduroy-puffer-1537884978.jpg?crop=1xw:1xh;center,top&resize=480:*", times_worn: 0, category: jacket )
+item1 = Item.create(name: "Puffer Jacket from Mom", image: "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/pink-corduroy-puffer-1537884978.jpg?crop=1xw:1xh;center,top&resize=480:*", category: jacket )
+item2 = Item.create(name: "Everlane Sweater", image: "https://res.cloudinary.com/everlane/image/upload/c_fill,dpr_1.5,f_jpg,h_1200,q_85,w_1200/v1/i/833e93b7_9022.jpg", category: top )
+item3 = Item.create(name: "Everlane Pants", image: "https://res.cloudinary.com/everlane/image/upload/c_fill,dpr_1.5,f_jpg,h_1200,q_85,w_1200/v1/i/f6417cf2_eed7.jpg", category: bottom )
 
-Item.create!([
-  {
-    name: "Puffer Jacket from Mom",
-     image: "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/pink-corduroy-puffer-1537884978.jpg?crop=1xw:1xh;center,top&resize=480:*",
-      times_worn: 0,
-       category: jacket
-  }
-])
+# Item.create!([
+#   {
+#     name: "Puffer Jacket from Mom",
+#      image: "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/pink-corduroy-puffer-1537884978.jpg?crop=1xw:1xh;center,top&resize=480:*",
+#       times_worn: 0,
+#        category: jacket
+#   }
+# ])
 # {
 #   "items": [
 #     {
