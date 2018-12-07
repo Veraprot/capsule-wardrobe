@@ -5,6 +5,9 @@ Rails.application.routes.draw do
       resources :categories do
         resources :items
       end
+      resources :outfits do
+        resources:items
+      end
     end
   end
 end

@@ -5,7 +5,7 @@ class CreateItems < ActiveRecord::Migration[5.2]
       t.integer :times_worn, :default => 0
       t.string :image
       t.references :category, foreign_key: true
-
+      t.references :outfit, foreign_key: true
       t.timestamps
     end
   end
